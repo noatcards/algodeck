@@ -2,6 +2,8 @@
 
 ## How to handle a recursive function that need to return a list
 
+----
+
 Input:
 - Result List
 - Current iteration element
@@ -19,11 +21,15 @@ void f(List<String> result, String current) {
 
 ## How to handle a recursive function that need to return a maximum value
 
+----
+
 Implementation: return max(f(a), f(b))
 
 [#recursion](recursion.md)
 
 ## Loop inside of a recursive function?
+
+----
 
 Might be a code smell. The iteration is already brought by the recursion itself.
 

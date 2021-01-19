@@ -2,18 +2,24 @@
 
 ## A* algorithm
 
+----
+
 Complete solution to find the shortest path to a target node
 
 Algorithm:
+
 - Put initial state in a priority queue
 - While priority queue is not empty: poll an element and inserts all neighbours
 - If target is reached, update a min variable
 
-Priority is computed using the evaluation function: f(n) = h + g where h is an heuristic (local cost to visit a node) and g is the cost so far (length of the path so far)
+Priority is computed using the evaluation function: f(n) = h + g where h is an heuristic (local cost to visit a node)
+and g is the cost so far (length of the path so far)
 
 [#graph](graph.md)
 
 ## Backedge definition
+
+----
 
 An edge from a node to itself or to an ancestor
 
@@ -21,9 +27,12 @@ An edge from a node to itself or to an ancestor
 
 ## Best-first search algorithm
 
+----
+
 Greedy solution (non-complete) to find the shortest path to a target node
 
 Algorithm:
+
 - Put initial state in a priority queue
 - While target not reached: poll an element and inserts all neighbours
 
@@ -32,6 +41,8 @@ Priority is computed using the evaluation function: f(n) = h where h is an heuri
 [#graph](graph.md) [#greedy](greedy.md)
 
 ## BFS & DFS graph traversal use cases
+
+----
 
 BFS: shortest path
 
@@ -43,6 +54,8 @@ DFS stores a single path at a time, requires less memory than BFS (on average bu
 
 ## BFS and DFS graph traversal time and space complexity
 
+----
+
 Time: O(v + e) with v the number of vertices and e the number of edges
 
 Space: O(v)
@@ -51,17 +64,22 @@ Space: O(v)
 
 ## Bidirectional search
 
+----
+
 Run two simultaneous BFS, one from the source, one from the target
 
 Once their searches collide, we found a path
 
-If branching factor of a tree is b and the distance to the target vertex is d, then the normal BFS/DFS searching time complexity would we O(b^d)
+If branching factor of a tree is b and the distance to the target vertex is d, then the normal BFS/DFS searching time
+complexity would we O(b^d)
 
 Here it is O(b^(d/2))
 
 [#graph](graph.md)
 
 ## Connected graph definition
+
+----
 
 If there is a path between every pair of vertices, the graph is called connected
 
@@ -71,6 +89,8 @@ Otherwise, the graph consists of multiple isolated subgraphs
 
 ## Difference Best-first search and A* algorithms
 
+----
+
 Best-first search is a greedy solution: not complete // a solution can be not optimal
 
 A*: complete
@@ -79,13 +99,17 @@ A*: complete
 
 ## Dijkstra algorithm
 
+----
+
 Input: graph, initial vertex
 
-Output: for each vertex: shortest path and previous node // The previous node is the one we are coming from in the shortest path. To find the shortest path between two nodes, we need to iterate backwards.  Example: A -> C => E, D, A
+Output: for each vertex: shortest path and previous node // The previous node is the one we are coming from in the
+shortest path. To find the shortest path between two nodes, we need to iterate backwards. Example: A -> C => E, D, A
 
 ![](res/dijkstra.png)
 
 Algorithm:
+
 - Init the shortest distance to MAX except for the initial node
 - Init a priority queue where the comparator will be on the total distance so far
 - Init a set to store all visited node
@@ -143,19 +167,25 @@ void dijkstra(GraphAjdacencyMatrix graph, int initial) {
 
 ## Dynamic connectivity problem
 
+----
+
 Given a set of nodes and edges: are two nodes connected (directly or in-directly)?
 
 Two methods:
+
 - union(2, 5) // connect object 2 with object 5
 - connected(1 , 6) // is object 1 connected to object 6?
 
 ### Further Reading
 
-- [Dynamic Connectivity Problem](https://medium.com/omarelgabrys-blog/dynamic-connectivity-problem-9460f3dff2c6) by Omar El Gabry
+- [Dynamic Connectivity Problem](https://medium.com/omarelgabrys-blog/dynamic-connectivity-problem-9460f3dff2c6) by Omar
+  El Gabry
 
 [#graph](graph.md)
 
 ## Dynamic connectivity problem - Quick-find solution
+
+----
 
 Array of integer of size N initialized with their index (0: 0, 1: 1 etc.).
 
@@ -168,6 +198,8 @@ If two indexes have the same value, they belong to the same group.
 
 ## Dynamic connectivity problem - Quick-union solution
 
+----
+
 Init: integer array of size N
 
 Interpretation: id[i] is parent of i, root parent if id[i] == i
@@ -179,9 +211,12 @@ Interpretation: id[i] is parent of i, root parent if id[i] == i
 
 ## Dynamic connectivity problem - Weighted Quick-union solution
 
+----
+
 Modify quick-union to avoid tall tree
 
-Keep track of the size of each tree (number of nodes): extra array size[i] to count number of objects in the tree rooted at i
+Keep track of the size of each tree (number of nodes): extra array size[i] to count number of objects in the tree rooted
+at i
 
 O(n) extra space
 
@@ -191,6 +226,8 @@ O(n) extra space
 [#graph](graph.md)
 
 ## Given n tasks from 0 to n-1 and a list of relations so that a -> b means a must be scheduled before b, how to know if it is possible to schedule all the tasks (no cycle)
+
+----
 
 Solution: topological sort
 
@@ -202,6 +239,8 @@ There is a cycle if the produced sorted array size is different from n
 
 ## Graph definition
 
+----
+
 A way to represent a network, or a collection of inteconnected objects
 
 G = (V, E) with V a set of vertices (or nodes) and E a set of edges (or links)
@@ -209,6 +248,8 @@ G = (V, E) with V a set of vertices (or nodes) and E a set of edges (or links)
 [#graph](graph.md)
 
 ## Graph traversal: BFS
+
+----
 
 Traverse broad into the graph by visiting the sibling/neighbor before children nodes (one level of children at a time)
 
@@ -239,6 +280,8 @@ while (!queue.isEmpty()) {
 
 ## Graph traversal: DFS
 
+----
+
 Traverse deep into the graph by visiting the children before sibling/neighbor nodes (traverse down one single path)
 
 Walk through a path, backtrack until we found a new path
@@ -249,8 +292,10 @@ Algorithm: recursive or iterative using a stack (same algo than BFS except we us
 
 ## How to compute the shortest path between two nodes in an unweighted graph
 
-BFS traversal by using an array to keep track of the min distance
-distances[i] gives the shortest distance between the input node and the node of id i
+----
+
+BFS traversal by using an array to keep track of the min distance distances[i] gives the shortest distance between the
+input node and the node of id i
 
 Algorithm: no need to keep track of the visited node, it is replaced by a test on the distance array
 
@@ -275,6 +320,8 @@ while (!queue.isEmpty()) {
 [#graph](graph.md)
 
 ## How to detect a cycle in a directed graph
+
+----
 
 Using DFS by marking the visited nodes, there is a cycle if a visited node is also part of the current stack
 
@@ -324,9 +371,12 @@ boolean isCyclic(DirectedGraph g, int node, boolean[] visited, boolean[] stack) 
 
 ## How to detect a cycle in an undirected graph
 
+----
+
 Using DFS
 
-Idea: for every visited vertex v, if there is an adjacent u such that u is already visited and u is not the parent of v, then there is a cycle
+Idea: for every visited vertex v, if there is an adjacent u such that u is already visited and u is not the parent of v,
+then there is a cycle
 
 ```java
 public boolean isCyclic(UndirectedGraph g) {
@@ -362,11 +412,15 @@ private boolean isCyclic(UndirectedGraph g, int v, boolean[] visited, int parent
 
 ## How to name a graph with directed edges and without cycle
 
+----
+
 Directed Acyclic Graph (DAG)
 
 [#graph](graph.md)
 
 ## How to name a graph with few edges and with many edges
+
+----
 
 Sparse: few edges
 
@@ -376,18 +430,24 @@ Dense: many edges
 
 ## How to name the number of edges
 
+----
+
 Degree of a vertex
 
 [#graph](graph.md)
 
 ## How to represent the edges of a graph (structure and complexity)
 
-1. Using an adjacency matrix: two-dimensional array of boolean with a[i][j] is true if there is an edge between node i and j
+----
+
+1. Using an adjacency matrix: two-dimensional array of boolean with a[i][j] is true if there is an edge between node i
+   and j
 
 - Time complexity: O(1)
 - Space complexity: O(v²) with v the number of vertices
 
-Problem: 
+Problem:
+
 - If graph is undirected: half of the space is useless
 - If graph is sparse, we still have to consume O(v²) space
 
@@ -400,17 +460,22 @@ Problem:
 
 ## Topological sort complexity
 
+----
+
 Time and space: O(v + e)
 
 [#complexity](complexity.md) [#graph](graph.md)
 
 ## Topological sort technique
 
+----
+
 If there is an edge from U to V, then U <= V
 
 Possible only if the graph is a DAG
 
 Algo:
+
 - Create a graph representation (adjacency list) and an in degree counter (Map<Integer, Integer>)
 - Zero them for each vertex
 - Fill the adjacency list and the in degree counter for each edge
@@ -480,15 +545,21 @@ List<Integer> sort(int vertices, int[][] edges) {
 
 ## Travelling salesman problem
 
+----
+
 Find the shortest possible route that visits every city (vertex) exactly once
 
 Possible solutions:
+
 - Greedy: nearest neighbour
-- Dynamic programming: compute optimal solution for a path of length n by using information already known for partial tours of length n-1 (time complexity: n^2 * 2^n)
+- Dynamic programming: compute optimal solution for a path of length n by using information already known for partial
+  tours of length n-1 (time complexity: n^2 * 2^n)
 
 [#graph](graph.md)
 
 ## Two types of graphs
+
+----
 
 Directed graph (with directed edges)
 

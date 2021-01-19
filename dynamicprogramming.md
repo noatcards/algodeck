@@ -2,17 +2,24 @@
 
 ## Dynamic programming concept
 
-Break down a problem in smaller parts and store the results of these subproblems so that they only need to be computed once
+----
+
+
+Break down a problem in smaller parts and store the results of these subproblems so that they only need to be computed
+once
 
 A DP algorithm will search through all of the possible subproblems (main difference with greedy algorithms)
 
 Based on either:
+
 - Memoization (top-down)
 - Tabulation (bottom-up)
 
 [#dynamicprogramming](dynamicprogramming.md)
 
 ## Memoization vs tabulation
+
+----
 
 Optimization technique to cache previously computed results
 

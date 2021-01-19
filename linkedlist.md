@@ -2,6 +2,8 @@
 
 ## Algorithm to reverse a linked list
 
+----
+
 ```java
 public ListNode reverse(ListNode head) {
 	ListNode previous = null;
@@ -25,11 +27,15 @@ public ListNode reverse(ListNode head) {
 
 ## Doubly linked list
 
+----
+
 Each node contains a pointer to the previous and the next node
 
 [#linkedlist](linkedlist.md)
 
 ## Doubly linked list complexity: access, insert, delete
+
+----
 
 Access: O(n)
 
@@ -41,11 +47,15 @@ Delete: O(1)
 
 ## Get the middle of a linked list
 
+----
+
 Using the runner technique
 
 [#linkedlist](linkedlist.md)
 
 ## Iterate over two linked lists
+
+----
 
 ```java
 while (l1 != null || l2 != null) {
@@ -57,6 +67,8 @@ while (l1 != null || l2 != null) {
 
 ## Linked list complexity: access, insert, delete
 
+----
+
 Access: O(n)
 
 Insert: O(1)
@@ -67,11 +79,15 @@ Delete: O(1)
 
 ## Linked list questions prerequisite
 
+----
+
 Single or doubly linked list?
 
 [#linkedlist](linkedlist.md)
 
 ## Queue implementations and insert/delete complexity
+
+----
 
 1. Linked list with pointers on head and tail
 
@@ -89,11 +105,15 @@ Delete: O(1)
 
 ## Ring buffer (or circular buffer) structure
 
+----
+
 Data structure using a single, fixed-sized buffer as if it were connected end-to-end
 
 [#linkedlist](linkedlist.md)
 
 ## What if we need to iterate backwards on a singly linked list in constant space without mutating the input?
+
+----
 
 Reverse the liked list (or a subpart only), implement the algo then reverse it again to the initial state
 

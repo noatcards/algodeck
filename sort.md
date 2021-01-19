@@ -2,6 +2,8 @@
 
 ## Bubble sort algorithm
 
+----
+
 Walk through a collection and compares 2 elements at a time
 
 If they are out of order, swap them
@@ -12,6 +14,8 @@ Continue until the entire collection is sorted
 
 ## Bubble sort complexity and stability
 
+----
+
 Time: O(n²)
 
 Space: O(1)
@@ -21,6 +25,8 @@ Stable
 [#complexity](complexity.md) [#sort](sort.md)
 
 ## Counting sort complexity, stability, use case
+
+----
 
 Time complexity: O(n + k) // n is the number of elements, k is the range (the maximum element)
 
@@ -33,6 +39,8 @@ Use case: known and small range of possible integers
 [#complexity](complexity.md) [#sort](sort.md)
 
 ## Counting sort algorithm
+
+----
 
 If range r is known
 
@@ -49,6 +57,8 @@ Now a[i] represents the first index of i if array was sorted
 
 ## Heapsort algorithm
 
+----
+
 - Build a max heap from the array
 - For i from n-1 to 0: 
 1. Swap the largest element (at index 0) with i
@@ -57,6 +67,8 @@ Now a[i] represents the first index of i if array was sorted
 [#heap](heap.md) [#sort](sort.md)
 
 ## Heapsort complexity, stability, use case
+
+----
 
 Time: Theta(n log n)
 
@@ -72,6 +84,8 @@ Yet, not stable and not cache friendly
 
 ## Insertion sort algorithm
 
+----
+
 From i to 0..n, insert a[i] to its correct position to the left (0..i)
 
 Used by humans
@@ -79,6 +93,8 @@ Used by humans
 [#sort](sort.md)
 
 ## Insertion sort complexity, stability, use case
+
+----
 
 Time: O(n²)
 
@@ -91,6 +107,8 @@ Use case: partially sorted structure
 [#complexity](complexity.md) [#sort](sort.md)
 
 ## Mergesort algorithm
+
+----
 
 Splits a collection into 2 halves, sort the 2 halves (recursive call) then merge them together to form one sorted collection
 
@@ -150,6 +168,8 @@ private void merge(int[] a, int[] helper, int lo, int mid, int hi) {
 
 ## Mergesort complexity, stability, use case
 
+----
+
 Time: Theta(n log n)
 
 Space: O(n)
@@ -161,6 +181,8 @@ Use case: good worst case time complexity and stable, good with linked list
 [#complexity](complexity.md) [#sort](sort.md)
 
 ## Quicksort algorithm
+
+----
 
 Sort a collection by repeatedly choosing a pivot and partitioning the collection around it (smaller before, larger after)
 
@@ -206,6 +228,8 @@ int partition(int a[], int lo, int hi) {
 
 ## Quicksort complexity, stability, use case
 
+----
+
 Time: best and average O(n log n), worst O(n²) if the array is already sorted in ascending or descending order
 
 Space: O(log n) // In-place sorting algorithm
@@ -217,6 +241,8 @@ Use case: in practice, quicksort is often faster than merge sort due to better l
 [#complexity](complexity.md) [#sort](sort.md)
 
 ## Radix sort algorithm
+
+----
 
 Sort by applying counting sort on one digit at a time (least to most significant)
 Each new level must be stable (if equals, keep the order of the previous level)
@@ -232,6 +258,8 @@ Example:
 
 ## Radix sort complexity, stability, use case
 
+----
+
 Time complexity: O(nk) // n is the number of elements, k is the maximum number of digits for a number
 
 Space complexity: O(k)
@@ -244,11 +272,15 @@ Use case: if k < log(n) (for example 1M of elements from 0..1000 as 4 < log(1M))
 
 ## Selection sort algorithm
 
+----
+
 From i to 0..n, find repeatedly the min element then swap it with i
 
 [#sort](sort.md)
 
 ## Selection sort complexity
+
+----
 
 Time: Theta(n²)
 
@@ -257,6 +289,8 @@ Space: O(1)
 [#complexity](complexity.md) [#sort](sort.md)
 
 ## Shuffling an array
+
+----
 
 Fisher-Yates shuffle algorithm:
 - Iterate over each element (i)

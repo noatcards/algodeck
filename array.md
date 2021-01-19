@@ -2,6 +2,8 @@
 
 ## Algorithm to reverse an array
 
+----
+
 ```java
 int i = 0;
 int j = a.length - 1;
@@ -14,6 +16,8 @@ while (i < j) {
 
 ## Array complexity: access, search, insert, delete
 
+----
+
 Access: O(1)
 
 Search: O(n)
@@ -25,6 +29,8 @@ Delete: O(n)
 [#array](array.md) [#complexity](complexity.md)
 
 ## Binary search in a sorted array algorithm
+
+----
 
 ```java
 int lo = 0, hi = a.length - 1;
@@ -44,11 +50,15 @@ while (lo <= hi) {
 
 ### Further Reading
 
-- [Nearly All Binary Searches and Mergesorts are Broken](https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html) by the Google AI Blog
+- [Nearly All Binary Searches and Mergesorts are Broken](https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html)
+  by the Google AI Blog
 
 [#array](array.md)
 
 ## Find an element in a rotated sorted array
+
+----
+
 
 Solution: binary search
 
@@ -82,12 +92,14 @@ int findElementRotatedArray(int[] a, int val) {
 [#array](array.md)
 
 ## Given an array, move all the 0 to the left while maintaining the order of the other elements
-   
+
 Example: 1, 0, 2, 0, 3, 0 => 0, 0, 0, 1, 2, 3
 
 Two pointers technique: read and write starting at the end of the array
 
 If read is on a 0, decrement read. Otherwise swap, decrement both
+
+----
 
 ```java
 public void move(int[] a) {
@@ -110,11 +122,16 @@ Space complexity: O(1)
 
 ## How to detect if an element is a pivot in a rotated sorted array
 
+----
+
+
 Only element whose previous is bigger (also the pivot is the smallest element)
 
 [#array](array.md)
 
 ## How to find a pivot element in a rotated array
+
+----
 
 Check first if the array is rotated
 
@@ -152,6 +169,8 @@ int findPivot(int[] a) {
 
 ## How to find the duplicates in an array
 
+----
+
 - Hashtable
 - Sorting the array then iterating over each element and check if previous = current
 
@@ -159,9 +178,12 @@ int findPivot(int[] a) {
 
 ## How to manage a dynamic array
 
+----
+
 When full, create a new array of twice the size, copy items (System.arraycopy is optimized for that)
 
-Shrink: 
+Shrink:
+
 - Not when one-half full (otherwise worst case is too expensive: double-shrink-double-shrink etc.)
 - Solution: one-quarter full
 
@@ -169,12 +191,18 @@ Shrink:
 
 ## How to test if the array is sorted in ascending or descending order
 
+----
+
+
 Test first and last element (no iteration)
 
 [#array](array.md)
 
 ## Rotate an array by n elements (n can be negative)
+
    
+----
+
 Example: 1, 2, 3, 4, 5 with n = 3 => 3, 4, 5, 1, 2
 
 - Reverse the initial array

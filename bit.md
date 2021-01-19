@@ -2,11 +2,15 @@
 
 ## & operator
 
+----
+
 AND bit by bit
 
 [#bit](bit.md)
 
 ## << operator
+
+----
 
 Shift on the left
 
@@ -16,13 +20,17 @@ n * 4 <=> left shift by 2
 
 [#bit](bit.md)
 
-## >> operator
+## > > operator
+
+----
 
 Shift on the right
 
 [#bit](bit.md)
 
-## >>> operator
+## > > > operator
+
+----
 
 Logical shift (shift the sign bit as well)
 
@@ -30,17 +38,24 @@ Logical shift (shift the sign bit as well)
 
 ## ^ operator
 
+----
+
 XOR bit by bit
 
 [#bit](bit.md)
 
 ## Bit vector structure
 
-Vector (linear sequence of numeric values stored contiguously in memory) in which each element is a bit (so either 0 or 1)
+----
+
+Vector (linear sequence of numeric values stored contiguously in memory) in which each element is a bit (so either 0 or
+1)
 
 [#bit](bit.md)
 
 ## Check exactly one bit is set
+
+----
 
 ```java
 boolean checkExactlyOneBitSet(int num) {
@@ -51,6 +66,8 @@ boolean checkExactlyOneBitSet(int num) {
 [#bit](bit.md)
 
 ## Clear bits from i to 0
+
+----
 
 ```java
 int clearBitsFromITo0(int num, int i) {
@@ -63,6 +80,8 @@ int clearBitsFromITo0(int num, int i) {
 
 ## Clear bits from most significant one to i
 
+----
+
 ```java
 int clearBitsFromMsbToI(int num, int i) {
 	int mask = (1 << i) - 1;
@@ -73,6 +92,8 @@ int clearBitsFromMsbToI(int num, int i) {
 [#bit](bit.md)
 
 ## Clear ith bit
+
+----
 
 ```java
 int clearBit(final int num, final int i) {
@@ -85,6 +106,8 @@ int clearBit(final int num, final int i) {
 
 ## Flip ith bit
 
+----
+
 ```java
 int flipBit(final int num, final int i) {
 	return num ^ (1 << i);
@@ -94,6 +117,8 @@ int flipBit(final int num, final int i) {
 [#bit](bit.md)
 
 ## Get ith bit
+
+----
 
 ```java
 boolean getBit(final int num, final int i) {
@@ -105,11 +130,15 @@ boolean getBit(final int num, final int i) {
 
 ## How to flip one bit
 
+----
+
 b ^ 1
 
 [#bit](bit.md)
 
 ## How to represent signed integers
+
+----
 
 Use the most significative bit to represent the sign. Yet, it is not enough (problem with this technique: 5 + (-5) != 0)
 
@@ -139,6 +168,8 @@ Max integer value: 1...1 (31 bits)
 
 ## Set ith bit
 
+----
+
 ```java
 int setBit(final int num, final int i) {
 	return num | (1 << i);
@@ -148,6 +179,8 @@ int setBit(final int num, final int i) {
 [#bit](bit.md)
 
 ## Update a bit from a given value
+
+----
 
 - Clear this bit
 - Apply OR on the result with a 0 or 1 left shifted to its index
@@ -164,11 +197,15 @@ int updateBit(int num, int i, boolean bit) {
 
 ## x & 0s
 
+----
+
 0
 
 [#bit](bit.md)
 
 ## x & 1s
+
+----
 
 x
 
@@ -176,11 +213,15 @@ x
 
 ## x & x
 
+----
+
 x
 
 [#bit](bit.md)
 
 ## x ^ 0s
+
+----
 
 x
 
@@ -206,17 +247,23 @@ x
 
 ## x | 1s
 
+----
+
 1s
 
 [#bit](bit.md)
 
 ## x | x
 
+----
+
 x
 
 [#bit](bit.md)
 
 ## XOR operations
+
+----
 
 0 ^ 0 = 0
 
@@ -234,11 +281,15 @@ n XOR 1 => flip
 
 ## | operator
 
+----
+
 OR bit by bit
 
 [#bit](bit.md)
 
 ## ~ operator
+
+----
 
 Complement bit by bit
 

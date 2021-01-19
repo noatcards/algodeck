@@ -2,11 +2,15 @@
 
 ## Stack
 
+----
+
 LIFO (Last In First Out)
 
 [#stack](stack.md)
 
 ## Stack implementations and insert/delete complexity
+
+----
 
 - Linked list with a pointer on the head
 

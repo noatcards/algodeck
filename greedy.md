@@ -2,6 +2,8 @@
 
 ## Best-first search algorithm
 
+----
+
 Greedy solution (non-complete) to find the shortest path to a target node
 
 Algorithm:
@@ -13,6 +15,8 @@ Priority is computed using the evaluation function: f(n) = h where h is an heuri
 [#greedy](greedy.md)
 
 ## Greedy algorithm
+
+----
 
 Algorithm paradigm of making the locally optimal choice at each stage using a heuristic function
 
@@ -26,11 +30,15 @@ Solution found may not be the most optimal one
 
 ## Greedy algorithm: structure
 
+----
+
 Often, the global context is spread into a priority queue
 
 [#greedy](greedy.md)
 
 ## Greedy technique
+
+----
 
 Identify an optimal subproblem or substructure in the problem and determine how to reach it
 
@@ -41,6 +49,8 @@ We may want to apply the traversal technique to have a global context for the id
 [#greedy](greedy.md) [#technique](technique.md)
 
 ## Technique - Optimization problems requiring a min or max
+
+----
 
 Greedy technique
 

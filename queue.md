@@ -2,17 +2,23 @@
 
 ## Dequeue data structure
 
+----
+
 Double ended queue for which elements can be added or removed from either the front (head) or the back (tail)
 
 [#queue](queue.md)
 
 ## Queue
 
+----
+
 FIFO (First In First Out)
 
 [#queue](queue.md)
 
 ## Queue implementations and insert/delete complexity
+
+----
 
 1. Linked list with pointers on head and tail
 

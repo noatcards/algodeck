@@ -2,6 +2,8 @@
 
 ## Binary heap (min-heap or max-heap) complexity: insert, get min (max), delete min (max)
 
+----
+
 Insert: O(log (n))
 
 Get min (max): O(1)
@@ -11,6 +13,8 @@ Delete min: O(log n)
 [#complexity](complexity.md) [#heap](heap.md)
 
 ## Binary heap (min-heap or max-heap) data structure used for the implementation
+
+----
 
 Using an array
 
@@ -22,6 +26,8 @@ If children at index i:
 [#heap](heap.md)
 
 ## Binary heap (min-heap or max-heap) definition
+
+----
 
 A binary heap is a a complete binary tree with min-heap or max-heap property ordering. Also called min heap or max heap.
 
@@ -35,6 +41,8 @@ Difference BST: in a BST, each smaller element is on the left and greater elemen
 
 ## Binary heap (min-heap or max-heap) delete min
 
+----
+
 Replace min element (root) with the last node (left-most, lowest-level node because a binary heap is a complete binary tree)
 
 If violations, swap with the smallest child (level by level)
@@ -42,6 +50,8 @@ If violations, swap with the smallest child (level by level)
 [#heap](heap.md)
 
 ## Binary heap (min-heap or max-heap) insert algorithm
+
+----
 
 Insert node at the end (left-most spot because a binary heap is a complete binary tree)
 
@@ -51,11 +61,15 @@ If violations, swap with parents until no more violation
 
 ## Binary heap (min-heap or max-heap) use-cases
 
+----
+
 Priority queue
 
 [#heap](heap.md)
 
 ## Comparator implementation to order two integers
+
+----
 
 Ordering, min-heap: (a, b) -> a - b
 
@@ -65,11 +79,15 @@ Reverse ordering, max-heap: (a, b) -> b - a
 
 ## Convert an array into a binary heap in place
 
+----
+
 For i from 0 to n-1, swap recursively element a[i] until min/max heap violation on its node
 
 [#heap](heap.md)
 
 ## Find the median of a stream of numbers, 2 methods insert(int) and int findMedian()
+
+----
 
 Solution: two heap technique
 
@@ -124,6 +142,8 @@ public double findMedian() {
 
 ## Given an unsorted array of numbers, find the K largest numbers in it
 
+----
+
 Solution: using a min heap but we keep only K elements in it
 
 ```java
@@ -163,6 +183,8 @@ Space complexity: O(k)
 
 ## Heapsort algorithm
 
+----
+
 - Build a max heap from the array
 - For i from n-1 to 0: 
 1. Swap the largest element (at index 0) with i
@@ -172,17 +194,23 @@ Space complexity: O(k)
 
 ## Is binary heap stable?
 
+----
+
 Stable
 
 [#heap](heap.md)
 
 ## Time complexity to build a binary heap
 
+----
+
 O(n)
 
 [#complexity](complexity.md) [#heap](heap.md)
 
 ## Two heaps technique
+
+----
 
 Keep two heaps:
 - A max heap for the first half
@@ -193,6 +221,8 @@ May be required to balance them to have at most a difference in terms of size of
 [#heap](heap.md) [#technique](technique.md)
 
 ## Why binary heap over BST for priority queue?
+
+----
 
 BST needs an extra pointer to the min or max value (otherwise finding the min or max is O(log n))
 
