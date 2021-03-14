@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Greedy
 
 ## Best-first search algorithm

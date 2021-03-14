@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Linked List
 
 ## Algorithm to reverse a linked list

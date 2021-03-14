@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Recursion
 
 ## How to handle a recursive function that need to return a list

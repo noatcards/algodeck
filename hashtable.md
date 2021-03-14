@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Hash Table
 
 ## Hash table complexity: search, insert, delete

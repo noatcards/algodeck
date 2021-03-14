@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Math
 
 ## a = a property

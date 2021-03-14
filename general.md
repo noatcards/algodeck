@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # General
 
 ## Before finding a solution

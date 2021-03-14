@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Array
 
 ## Algorithm to reverse an array

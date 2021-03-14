@@ -1,3 +1,8 @@
++++
+noatcards = True
+isdraft = False
++++
+
 # Graph
 
 ## A* algorithm
