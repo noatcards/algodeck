@@ -33,7 +33,10 @@ The topics covered are the following:
 Noatcards is simple spaced repetition learning platform based on Telegram(Bot). The platform has feature call Quiz Competition Game which you can create Quiz Game and play with your friend.
 You can use the repo to create a Quiz Library in `noat.cards` and create some quiz games to test your knowledge yourself or have fun with your friends.
 
-![Noat Cards](res/algodeck.gif)
+<p align="center">
+  <img src="res/algodeck.gif">
+  <br/>
+</p>
 
 ### How to use the repo with `noat.cards`
 
@@ -44,17 +47,17 @@ You can use the repo to create a Quiz Library in `noat.cards` and create some qu
 - Navigate to `🗃` (Repo Shelf) by click on `🗃` button
 - Select `Import Repo 📥` (Import Repository with git url)
 - Input the repo git url.
-  `https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes`
+  `https://github.com/noatcards/algodeck`
 
 **2. Practice quiz**
 
 - Navigate to `🗃` (Repo Shelf) by click on `🗃` button
 - On `🗃` (Repo Shelf) tab,
 
-  select `linkedin-skill-assessments-quizzes` by click on its index button
+  select `algodeck` by click on its index button
 
-- select Quiz Test, you want to practice.
-- Click on button `Learn it` to start practice the quiz test
+- select Cards Deck , you want to review/learn.
+- Click on button `Learn` to start start learn session
 
 ## Anki Deck
 
