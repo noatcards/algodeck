@@ -1,5 +1,6 @@
 ![](res/algodeck.jpg)
 
+
 ## Overview
 
 Algo Deck is an **open-source collection of 200+ algorithmic flash cards**.
@@ -26,6 +27,34 @@ The topics covered are the following:
 - [String](string.md): string permutation, rotation, rabin-karp substring search, etc.
 - [Technique](technique.md): most important techniques to master to solve algorithmic problems including greedy techniques, runner, sliding window, etc.
 - [Tree](tree.md): binary tree use cases, binary search tree, 2-3 tree, red-black tree, use cases, etc. 
+
+## [Noatcards](https://noat.cards)
+
+Noatcards is simple spaced repetition learning platform based on Telegram(Bot). The platform has feature call Quiz Competition Game which you can create Quiz Game and play with your friend.
+You can use the repo to create a Quiz Library in `noat.cards` and create some quiz games to test your knowledge yourself or have fun with your friends.
+
+![Noat Cards](res/algodeck.gif)
+
+### How to use the repo with `noat.cards`
+
+**1. Import the repository to `noat.cards`**
+
+- Access to the [bot](https://telegram.me/noat_cards_bot?start)
+- Input command `/start` or `/home` start Main UI of the bot
+- Navigate to `🗃` (Repo Shelf) by click on `🗃` button
+- Select `Import Repo 📥` (Import Repository with git url)
+- Input the repo git url.
+  `https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes`
+
+**2. Practice quiz**
+
+- Navigate to `🗃` (Repo Shelf) by click on `🗃` button
+- On `🗃` (Repo Shelf) tab,
+
+  select `linkedin-skill-assessments-quizzes` by click on its index button
+
+- select Quiz Test, you want to practice.
+- Click on button `Learn it` to start practice the quiz test
 
 ## Anki Deck
 
