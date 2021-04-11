@@ -49,14 +49,14 @@ You can use the repo to create a Quiz Library in `noat.cards` and create some qu
 - Input the repo git url.
   `https://github.com/noatcards/algodeck`
 
-**2. Practice quiz**
+**2. learn/review**
 
 - Navigate to `🗃` (Repo Shelf) by click on `🗃` button
 - On `🗃` (Repo Shelf) tab,
 
   select `algodeck` by click on its index button
 
-- select Cards Deck , you want to review/learn.
+- select Cards Deck , you want to review/learn or click `Lean` to start learn session on the repo
 - Click on button `Learn` to start start learn session
 
 ## Anki Deck
