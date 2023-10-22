@@ -1,6 +1,6 @@
 ---
-noatcards = true
-isdraft = false
+noatcards:  true
+isdraft: false
 ---
 
 # Dynamic Programming
