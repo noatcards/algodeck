@@ -1,6 +1,6 @@
 ---
-noatcards = True
-isdraft = False
+noatcards = true
+isdraft = false
 ---
 
 # Array
